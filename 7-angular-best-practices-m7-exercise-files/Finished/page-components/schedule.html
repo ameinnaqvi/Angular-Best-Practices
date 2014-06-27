@@ -1,0 +1,8 @@
+<div class="well sidebar-nav" >
+  <h4>Your Schedule ({{schedule.length}})</h4>
+  <div class="row" ng-repeat="course in schedule">
+    <div class="col-md-12">
+      <button class="btn btn-default btn-xs" ng-click="unregisterCourse(course)">X</button> {{course.name}} - {{course.credits}} credits
+    </div>
+  </div>
+</div>

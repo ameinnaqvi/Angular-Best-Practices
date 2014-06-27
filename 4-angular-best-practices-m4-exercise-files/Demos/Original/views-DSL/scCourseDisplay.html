@@ -1,0 +1,8 @@
+<div class="row" sc-hover ng-click="viewCourseDetails(course)">
+  <div class="pull-left" sc-hover="showCourseDescription">
+    {{course.name}}
+  </div>
+  <div class="pull-right">
+    <button ng-show="canDropCourse(course)" ng-click="dropCourse(course)">Drop</button>
+  </div>
+</div>

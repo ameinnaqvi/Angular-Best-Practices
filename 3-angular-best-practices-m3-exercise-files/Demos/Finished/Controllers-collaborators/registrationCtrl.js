@@ -1,0 +1,3 @@
+angular.module('app').controller('registrationCtrl',function($scope, schedule, instructors, registration, currentUser, students, policies) {
+  // kill me now....
+});

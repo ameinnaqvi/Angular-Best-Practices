@@ -1,0 +1,7 @@
+<div class="well sidebar-nav">
+  <h3>Instructors ({{scFollowedInstructors.length}} followed)</h3>
+  <div class="row" ng-repeat="instructor in instructorList">
+    <div class="col-md-6">{{instructor.name}}</div>
+    <div class="col-md-6"><sc-follow-instructor instructor="instructor" /></div>
+  </div>
+</div>

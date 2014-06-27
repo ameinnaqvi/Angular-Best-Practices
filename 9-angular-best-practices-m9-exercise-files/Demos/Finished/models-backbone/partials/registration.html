@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="well"><div class="container"><h2>Registration - {{identity.currentUser.name}}</h2></div><div>{{message}}&nbsp;</div></div>
+  <div class="row">
+    <div class="col-md-8">
+      <div ng-include="'partials/catalog.html'" ng-controller="scCatalogCtrl"></div>
+    </div>
+    <div class="col-md-4">
+      <div ng-include="'partials/schedule.html'" ng-controller="scScheduleCtrl"></div>
+      <div ng-include="'partials/followedInstructors.html'" ng-controller="scFollowedInstructorsCtrl"></div>
+
+    </div>
+  </div>
+
+</div>

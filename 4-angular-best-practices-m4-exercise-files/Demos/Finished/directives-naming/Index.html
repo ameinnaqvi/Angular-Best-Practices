@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <body>
+    <div ng-controller="Controller1">
+      <my-directive>{{title}}
+      <p></p>
+        <div ng-repeat="val in values">
+          {{val}}
+        </div>
+      </my-directive>
+
+    </div>
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

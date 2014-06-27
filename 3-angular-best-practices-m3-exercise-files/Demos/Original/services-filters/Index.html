@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<body>
+<div ng-controller="classCtrl">
+  <h1>Available Classes</h1>
+  <div ng-repeat="class in availableClasses">
+    <button ng-click="schedule.addClass(class)">Register</button>{{class.name}} rating:{{class.rating | ratings}}
+  </div>
+
+
+</div>
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

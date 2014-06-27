@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Registrator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+    <!--<div class="container" ng-controller="scheduleCtrl" ng-cloak>-->
+      <!--<div class="jumbotron"><div class="container"><h1>{{student.name}}</h1></div></div>-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-8">-->
+          <!--<h1>Your Info</h1>-->
+          <!--<div>{{student.name}}</div>-->
+          <!--<div>{{student.dob}}</div>-->
+          <!--<div>{{student.address}}</div>-->
+          <!--<div>{{student.GPA}}</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="container" ng-controller="scheduleCtrl">-->
+      <!--<div class="jumbotron"><div class="container"><h1 ng-bind="student.name">&nbsp;</h1></div></div>-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-8">-->
+          <!--<h1>Student Info</h1>-->
+          <!--<div ng-bind="student.name"></div>-->
+          <!--<div ng-bind="student.dob"></div>-->
+          <!--<div ng-bind="student.address"></div>-->
+          <!--<div ng-bind="student.GPA"></div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="container" ng-controller="scheduleCtrl">-->
+      <!--<img src="spinner.gif" ng-hide="true" style="width:400px" />-->
+      <!--<div ng-cloak class="jumbotron"><div class="container"><h1>{{student.name}}</h1></div></div>-->
+      <!--<div ng-cloak class="row">-->
+        <!--<div class="col-md-8">-->
+          <!--<h1>Your Info</h1>-->
+          <!--<div>{{student.name}}</div>-->
+          <!--<div>{{student.dob}}</div>-->
+          <!--<div>{{student.address}}</div>-->
+          <!--<div>{{student.GPA}}</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+
+    <div class="container" ng-controller="scheduleCtrl">
+      <img src="spinner.gif" ng-hide="ready" style="width:400px" />
+      <div ng-cloak ng-show="ready" class="jumbotron"><div class="container"><h1>{{student.name}}</h1></div></div>
+      <div ng-cloak ng-show="ready" class="row">
+        <div class="col-md-8">
+          <h1>Your Info</h1>
+          <div>{{student.name}}</div>
+          <div>{{student.dob}}</div>
+          <div>{{student.address}}</div>
+          <div>{{student.GPA}}</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
